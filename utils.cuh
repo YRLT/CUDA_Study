@@ -8,8 +8,7 @@
 
 using namespace std;
  
-
-const int N = 100;
+const int N = 1024;
 
 struct CudaStamp {
     cudaEvent_t start;

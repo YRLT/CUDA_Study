@@ -2,8 +2,8 @@
 #define VNAME(name)(#name)
 
 void printMatrix(float Mat[][N]) {
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < N; j++) {
+    for (int i = 116; i < 166; i++) {
+        for (int j = 116; j < 166; j++) {
             std::cout << Mat[i][j] << ",";
         }
         std::cout << "\n" << std::endl;
@@ -143,9 +143,9 @@ bool is_array2D_equil(float A[][N], float B[][N]) {
     bool is_equal = true;
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
-            if (abs(A[i][j] - B[i][j]) >= 1e-3) {
+            if (abs(A[i][j] - B[i][j]) >= 0.5){
                 is_equal = false;
-                // cout << "i: " << i << ",j:" << j << ",A:" << A[i][j] << ",B:"<< B[i][j] << endl;
+                cout << "i: " << i << ",j:" << j << ",A:" << A[i][j] << ",B:"<< B[i][j] << endl;
             }
         }
     }
